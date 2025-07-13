@@ -32,3 +32,27 @@ PersonalAssistant.prototype.reportMood = function() {
 PersonalAssistant.prototype.updateMood = function(newMood) {
     this.mood = newMood;
 };
+
+
+
+
+
+// Use console.log() to simulate a day in your life where you:
+const myAssistant = new PersonalAssistant("Jarvis");
+
+console.log(`Hi! I'm ${myAssistant.name}, your assistant.`);
+console.log(`You have ${myAssistant.tasks.length} tasks left.`);
+
+// Add tasks
+myAssistant.addTask("Finish JS assignment");
+myAssistant.addTask("Prepare for the meeting");
+myAssistant.addTask("Go grocery shopping");
+
+// Mood before completing tasks
+myAssistant.reportMood();
+
+// Complete a task
+myAssistant.completeTask();
+
+// Mood after task completion
+myAssistant.reportMood();
